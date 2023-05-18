@@ -42,6 +42,7 @@ SpeechGPT demos are shown in our [project page](https://0nutation.github.io/Spee
 ## Dataset
 We will release SpeechInstruct dataset.
 ## Models
+We will release modality-adaptation pre-trained model, cross-modal instruction fine-tuned model and chain-of-modality instruction fine-tuned model.
 ## Talk with SpeechGPT
 ## Fine-tune SpeechGPT
 ## Performance
