@@ -40,6 +40,7 @@ SpeechGPT demos are shown in our [project page](https://0nutation.github.io/Spee
 
 
 ## Dataset
+We will release SpeechInstruct dataset.
 ## Models
 ## Talk with SpeechGPT
 ## Fine-tune SpeechGPT
