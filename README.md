@@ -9,10 +9,15 @@
 </p>
 
 ## Introduction
-SpeechGPT, a large language model with intrinsic cross-modal conversational abilities, capable of perceiving and generating multi-model content. With discrete speech representations, we first construct **SpeechInstruct**, a large-scale cross-modal speech instruction dataset. Additionally, we employ a three-stage training strategy that includes modality-adaptation pre-training, cross-modal instruction fine-tuning, and chain-of-modality instruction fine-tuning. The experimental results demonstrate that SpeechGPT has an impressive capacity to follow multi-modal human instructions and highlight the potential of handling multiple modalities with one model.
+SpeechGPT, a large language model with intrinsic cross-modal conversational abilities, capable of perceiving and generating multi-model content. With discrete speech representations, we first construct SpeechInstruct, a large-scale cross-modal speech instruction dataset. Additionally, we employ a three-stage training strategy that includes modality-adaptation pre-training, cross-modal instruction fine-tuning, and chain-of-modality instruction fine-tuning. The experimental results demonstrate that SpeechGPT has an impressive capacity to follow multi-modal human instructions and highlight the potential of handling multiple modalities with one model.
 <p align="center">
     <img src="Pictures/speechgpt-intro.png" width="95%"> <br>
     SpeechGPT’s capabilities to tackle multiple cross-modal tasks
+</p>
+
+<p align="center">
+    <img src="Pictures/SpeechGPT-main.png" width="95%"> <br>
+    SpeechInstruct construction process and SpeechGPT model structure
 </p>
 
 
