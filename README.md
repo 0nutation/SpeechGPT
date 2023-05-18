@@ -9,15 +9,20 @@
 </p>
 
 ## Introduction
-SpeechGPT, a large language model with intrinsic cross-modal conversational abilities, capable of perceiving and generating multi-model content. With discrete speech representations, we first construct SpeechInstruct, a large-scale cross-modal speech instruction dataset. Additionally, we employ a three-stage training strategy that includes modality-adaptation pre-training, cross-modal instruction fine-tuning, and chain-of-modality instruction fine-tuning. The experimental results demonstrate that SpeechGPT has an impressive capacity to follow multi-modal human instructions and highlight the potential of handling multiple modalities with one model.
+SpeechGPT, a large language model with **intrinsic** cross-modal conversational abilities, capable of perceiving and generating multi-model content following human instructions. With discrete speech representations, we first construct **SpeechInstruct**, a large-scale cross-modal speech instruction dataset. Additionally, we employ a three-stage training strategy that includes **modality-adaptation pre-training**, **cross-modal instruction fine-tuning**, and **chain-of-modality instruction fine-tuning**. The experimental results demonstrate that SpeechGPT has an impressive capacity to follow multi-modal human instructions and highlight the potential of handling multiple modalities with one model. <br>
+SpeechGPT demos are shown in our [project page](https://0nutation.github.io/SpeechGPT.github.io/). As shown in the demos, SpeechGPT has strong cross-modal instruction-following ability and spoken dialogue ability. SpeechGPT can be **a talking encyclopedia, your personal assistant, your chat partner, a poet, a psychologist andd your educational assistant**...
+
+<br>
+<br>
 <p align="center">
     <img src="Pictures/speechgpt-intro.png" width="95%"> <br>
     SpeechGPT’s capabilities to tackle multiple cross-modal tasks
 </p>
-
+<br>
+<br>
 <p align="center">
     <img src="Pictures/SpeechGPT-main.png" width="95%"> <br>
-    SpeechInstruct construction process and SpeechGPT model structure
+    Left: SpeechInstruct construction process.  Right: SpeechGPT model structure
 </p>
 
 
@@ -39,4 +44,5 @@ SpeechGPT, a large language model with intrinsic cross-modal conversational abil
 ## Talk with SpeechGPT
 ## Fine-tune SpeechGPT
 ## Performance
+SpeechGPT demos are shown in our [project page](https://0nutation.github.io/SpeechGPT.github.io/). As shown in the demos, SpeechGPT has strong cross-modal instruction-following ability and spoken dialogue ability. SpeechGPT can be a talking encyclopedia, your personal assistant, your chat partner, a poet, a psychologist andd your educational assistant etc.
 
