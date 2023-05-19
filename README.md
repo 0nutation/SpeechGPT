@@ -2,7 +2,7 @@
 
 <!-- [[Project Page](https://0nutation.github.io/SpeechGPT.github.io/)] [[Paper]()] -->
 
-<a href='[https://x-llm.github.io/](https://0nutation.github.io/SpeechGPT.github.io/)'><img src='https://img.shields.io/badge/Project-Page-Green'></a>  <a href='[https://arxiv.org/abs/2305.04160](https://0nutation.github.io/SpeechGPT.github.io/)'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
+<a href='[https://0nutation.github.io/SpeechGPT.github.io/]'><img src='https://img.shields.io/badge/Project-Page-Green'></a>  <a href='[https://arxiv.org/pdf/2305.11000.pdf]'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 
 <p align="center">
     <img src="Pictures/logo.png" width="20%"> <br>
