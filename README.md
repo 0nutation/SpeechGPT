@@ -57,3 +57,20 @@ SpeechGPT demos are shown in our [project page](https://0nutation.github.io/Spee
     <img src="Pictures/cases_spoken_dialogue.png" width="95%"> <br>
     Cases of spoken dialogue results
 </p>
+
+## Acknowledgement
+- [MOSS](https://github.com/OpenLMLab/MOSS): We use moss-sft-002-data.
+- [stanford_alpaca](https://github.com/tatsu-lab/stanford_alpaca):The codebase we built upon.
+
+If you find SpeechGPT useful for your research and applications, please cite using the BibTex:
+
+```
+@misc{zhang2023speechgpt,
+      title={SpeechGPT: Empowering Large Language Models with Intrinsic Cross-Modal Conversational Abilities}, 
+      author={Dong Zhang and Shimin Li and Xin Zhang and Jun Zhan and Pengyu Wang and Yaqian Zhou and Xipeng Qiu},
+      year={2023},
+      eprint={2305.11000},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
