@@ -44,7 +44,7 @@ We will release modality-adaptation pre-trained model, cross-modal instruction f
 ## Talk with SpeechGPT
 ## Fine-tune SpeechGPT
 ## Performance
-SpeechGPT demos are shown in our [project page](https://0nutation.github.io/SpeechGPT.github.io/). As shown in the demos, SpeechGPT has strong cross-modal instruction-following ability and spoken dialogue ability. SpeechGPT can be a talking encyclopedia, your personal assistant, your chat partner, a poet, a psychologist andd your educational assistant etc.
+SpeechGPT demos are shown in our [project page](https://0nutation.github.io/SpeechGPT.github.io/). As shown in the demos, SpeechGPT has strong cross-modal instruction-following ability and spoken dialogue ability. SpeechGPT can be a talking encyclopedia, your personal assistant, your chat partner, a poet, a psychologist and your educational assistant etc.
 <br>
 <br>
 <p align="center">
