@@ -25,7 +25,7 @@ SpeechGPT demos are shown in our [project page](https://0nutation.github.io/Spee
 
 
 ## Release
-- [5/18] 🔥 We released **SpeechGPT: Empowering Large Language Models with Intrinsic Cross-Modal Conversational Abilities**. We propose SpeechGPT, the first multi-modal LLM capable of perceiving and generating multi-modal contents following multi-modal human instructions.  Checkout the [paper]() and [demo](https://0nutation.github.io/SpeechGPT.github.io/).
+- [5/18] 🔥 We released **SpeechGPT: Empowering Large Language Models with Intrinsic Cross-Modal Conversational Abilities**. We propose SpeechGPT, the first multi-modal LLM capable of perceiving and generating multi-modal contents following multi-modal human instructions.  Checkout the [paper](https://arxiv.org/abs/2305.11000) and [demo](https://0nutation.github.io/SpeechGPT.github.io/).
 
 
 ## Contents
