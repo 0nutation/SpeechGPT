@@ -257,9 +257,3 @@ if __name__=='__main__':
 
 
 
-# python3 speechgpt/src/infer/cli_infer.py \
-# --model-name-or-path "/mnt/petrelfs/zhangdong.p/speechgpt/output/7B/v1.5/s2_7B_from3750_0820/checkpoint-16803" \
-# --lora-weights "/mnt/petrelfs/zhangdong.p/speechgpt/output/7B/v1.5/s3_7B_from16803_COMss_0905/checkpoint-3300" \
-# --output-dir "speechgpt/output/" \
-# --s2u-dir "/mnt/petrelfs/zhangdong.p/speechgpt/utils/speech2unit/" \
-# --vocoder-dir "/mnt/petrelfs/zhangdong.p/speechgpt/utils/vocoder/single_speaker/"
