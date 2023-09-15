@@ -86,7 +86,7 @@ pip install -r requirements.txt
 ### Download
 To talk with SpeechGPT, you should download [SpeechGPT-7B-cm](https://huggingface.co/fnlp/SpeechGPT-7B-cm) and [SpeechGPT-7B-com](https://huggingface.co/fnlp/SpeechGPT-7B-com) locally.
 
-You should download mHuBERT model to ```utils/speech2unit/```. Please see [Speech2unit](https://github.com/0nutation/SpeechGPT/utils/speech2unit/README_DATA.md) for details.
+You should download mHuBERT model to ```utils/speech2unit/```. Please see [Speech2unit](https://github.com/0nutation/SpeechGPT/blob/main/speechgpt/utils/speech2unit/README.md) for details.
 ```bash
 s2u_dir="uitls/speech2unit"
 cd ${s2u_dir}
@@ -94,7 +94,7 @@ wget https://dl.fbaipublicfiles.com/hubert/mhubert_base_vp_en_es_fr_it3.pt
 wget https://dl.fbaipublicfiles.com/hubert/mhubert_base_vp_en_es_fr_it3_L11_km1000.bin
 ```
 
-You should download the unit-vocoder to ```utils/vocoder/```. Please see [vocoder](https://github.com/0nutation/SpeechGPT/utils/vocoder/README_DATA.md) for details.
+You should download the unit-vocoder to ```utils/vocoder/```. Please see [vocoder](https://github.com/0nutation/SpeechGPT/blob/main/speechgpt/utils/vocoder/README.md) for details.
 ```bash
 vocoder_dir="utils/vocoder/"
 cd ${vocoder_dir}
@@ -170,7 +170,7 @@ python3 speechgpt/src/infer/web_infer.py \
 
 ## Train SpeechGPT
 ### Stage1: Modality-adaptation Pre-training
-First, utilize mHuBERT for discretizing the LibriLight dataset to obtain discrete unit sequences for stage1 training. You can refer to the data processing methods in [Speech2unit](https://github.com/0nutation/SpeechGPT/utils/speech2unit/README_DATA.md).
+First, utilize mHuBERT for discretizing the LibriLight dataset to obtain discrete unit sequences for stage1 training. You can refer to the data processing methods in [Speech2unit](https://github.com/0nutation/SpeechGPT/blob/main/speechgpt/utils/speech2unit/README.md).
 
 Second, divide the discrete units into a training set and a development set, and save them in the following format in the files ```data/stage1/train.txt``` and ```data/stage1/dev.txt```:
 ```
