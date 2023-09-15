@@ -42,7 +42,7 @@ SpeechGPT demos are shown in our [project page](https://0nutation.github.io/Spee
 
 - [**SpeechGPT-7B-ma**](https://huggingface.co/fnlp/SpeechGPT-7B-ma): The model obtained after the first-stage modality-adaptation pre-training, which was initialized with LLaMA-7B and further pre-trained on LibriLight speech units.
 - [**SpeechGPT-7B-cm**](https://huggingface.co/fnlp/SpeechGPT-7B-cm): The model obtained after the second-stage cross-modal instruction finetuning, which was initialized with SpeechGPT-7B-ma and further finetuned on SpeechInstruct Cross-Modal Instruction set. This is a powerful foundational model that aligns speech and text.
-- [**SpeechGPT-7B-com**](https://huggingface.co/fnlp/SpeechGPT-7B-com): The model obtained after the third-stage chain-of-modality instruction finetuning, which was initialized with SpeechGPT-7B-cm and further lora-finetuned on SpeechInstruct Chain-of-Modality Instruction set. This is an adapter-model of SpeechGPT-7B-cm for spoken dialogue.
+- [**SpeechGPT-7B-com**](https://huggingface.co/fnlp/SpeechGPT-7B-com): The model obtained after the third-stage chain-of-modality instruction lora-finetuning, which was initialized with SpeechGPT-7B-cm and further lora-finetuned on SpeechInstruct Chain-of-Modality Instruction set. This is an adapter-model of SpeechGPT-7B-cm for spoken dialogue.
 
 ### Datasets
 
