@@ -47,12 +47,3 @@ demo = gr.Interface(
         )
 demo.launch(share=True)
 
-
-
-# base="s2_7B_from3750_0820"
-# stage="s3_7B_from16803_COMss_0905"
-# python3 speechgpt/src/infer/web_inference.py \
-# --model-name-or-path "speechgpt/output/7B/v1.5/${base}/checkpoint-16803" \
-# --lora-weights "speechgpt/output/7B/v1.5/${stage}/checkpoint-3300" \
-# --output-dir "speechgpt/output/${stage}/" \
-# --mode interactive
