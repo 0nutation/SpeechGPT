@@ -46,8 +46,8 @@ SpeechGPT demos are shown in our [project page](https://0nutation.github.io/Spee
 
 ### Datasets
 
-- [**SpeechInstruct-cross-modal**](https://huggingface.co/datasets/fnlp/SpeechInstruct/resolve/main/cross_modal_instruction.jsonl): The cross-modal instruction set, about 9 million unit-text data pairs tokenzed by mHuBERT from large-scale English ASR datasets. data format:
-- [**SpeechInstruct-chain-of-modality**](https://huggingface.co/datasets/fnlp/SpeechInstruct/resolve/main/chain_of_modality_instruction.jsonl): The chain-of-thought style instructions for four input-output formats, namely Speech Instruction-Speech Response, Speech Instruction-Text Response, Text Instruction-Speech Response, and Text Instruction-Text Response.
+- [**SpeechInstruct-cross-modal**](https://huggingface.co/datasets/fnlp/SpeechInstruct): The cross-modal instruction set, about 9 million unit-text data pairs tokenzed by mHuBERT from large-scale English ASR datasets. data format:
+- [**SpeechInstruct-chain-of-modality**](https://huggingface.co/datasets/fnlp/SpeechInstruct): The chain-of-thought style instructions for four input-output formats, namely Speech Instruction-Speech Response, Speech Instruction-Text Response, Text Instruction-Speech Response, and Text Instruction-Text Response.
 
 SpeechInstruct-cross-modal data format:
 ```
