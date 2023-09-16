@@ -111,9 +111,8 @@ python3 speechgpt/src/infer/cli_infer.py \
 --vocoder-dir "${vocoder_dir} \
 --output-dir "output" 
 ```
-**Notes**
+**Notes:**
 For speech input, you can provide the path to the audio file. For ASR or TTS tasks, you must prefix the speech or text with ```this is input: ```,  otherwise, it may be recognized incorrectly.
-
 The speech response will be saved to a ```.wav``` file, and detailed responses will be saved in a JSON file. The paths to these files will be indicated in the response.
 
 Here are some examples of talking with SpeechGPT:
