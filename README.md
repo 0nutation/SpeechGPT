@@ -218,6 +218,7 @@ Step3: Modify the ```METAROOT```, ```DATAROOT```, and ```OUTROOT``` parameters i
 
 
 ## Acknowledgements
+- We express our appreciation to Fuliang Weng and Rong Ye for their valuable suggestions and guidance.
 - [MOSS](https://github.com/OpenLMLab/MOSS): We use moss-sft-002-data.
 - [stanford_alpaca](https://github.com/tatsu-lab/stanford_alpaca):The codebase we built upon.
 
