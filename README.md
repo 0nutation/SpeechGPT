@@ -108,7 +108,7 @@ python3 speechgpt/src/infer/cli_infer.py \
 --model-name-or-path "path/to/SpeechGPT-7B-cm" \
 --lora-weights "path/to/SpeechGPT-7B-com" \
 --s2u-dir "${s2u_dir}" \
---vocoder-dir "${vocoder_dir} \
+--vocoder-dir "${vocoder_dir}" \
 --output-dir "output" 
 ```
 **Notes:**
