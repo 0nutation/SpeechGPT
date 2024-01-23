@@ -13,7 +13,7 @@ We introduce Chain-of-Information Generation, a semantic and perceptual disentan
 large-scale speech generation, which performs semantic and perceptual modeling sequentially. Based on that, we build SpeechGPT-Gen, a large speech langauge model with strong semantic and perceptual modeling abilities. SpeechGPT-Gen consists of a LLM based autoregressive model for semantic modeling and a flow matching based non-autoregressive model for perceptual modeling. We propose to improve the efficiency of flow matching by injecting semantic information into the prior distribution.
 Scaling up the model parameters to 8 billion, SpeechGPT-Gen achieves impressive performance on zero-shot text-to-speech, zero-shot voice conversion and
 speech-to-speech dialogue, showing strong semantic and perceptual modeling capabilities and the effectiveness
-and efficiency of Chain-of-Information Generation method. Code and models are available at ~\url{https://github.com/0nutation/SpeechGPT}.
+and efficiency of Chain-of-Information Generation method.
 
 <p align="center">
     <img src="imgs/model.png" width="95%"> <br>
