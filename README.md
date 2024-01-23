@@ -89,7 +89,7 @@ To talk with SpeechGPT, you should download [SpeechGPT-7B-cm](https://huggingfac
 
 You should download mHuBERT model to ```utils/speech2unit/```. Please see [Speech2unit](https://github.com/0nutation/SpeechGPT/blob/main/speechgpt/utils/speech2unit/README.md) for details.
 ```bash
-s2u_dir="uitls/speech2unit"
+s2u_dir="utils/speech2unit"
 cd ${s2u_dir}
 wget https://dl.fbaipublicfiles.com/hubert/mhubert_base_vp_en_es_fr_it3.pt
 wget https://dl.fbaipublicfiles.com/hubert/mhubert_base_vp_en_es_fr_it3_L11_km1000.bin
