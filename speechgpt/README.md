@@ -3,7 +3,7 @@
 <a href='https://0nutation.github.io/SpeechGPT.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>  <a href='https://arxiv.org/abs/2305.11000'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> [![](https://img.shields.io/badge/Datasets-SpeechInstruct-yellow)](https://huggingface.co/datasets/fnlp/SpeechInstruct)
 
 <p align="center">
-    <img src="Pictures/logo.png" width="20%"> <br>
+    <img src="imgs/logo.png" width="20%"> <br>
 </p>
 
 ## Introduction
@@ -13,13 +13,13 @@ SpeechGPT demos are shown in our [project page](https://0nutation.github.io/Spee
 <br>
 <br>
 <p align="center">
-    <img src="Pictures/speechgpt-intro.png" width="95%"> <br>
+    <img src="imgs/speechgpt-intro.png" width="95%"> <br>
     SpeechGPT’s capabilities to tackle multiple cross-modal tasks
 </p>
 <br>
 <br>
 <p align="center">
-    <img src="Pictures/SpeechGPT-main.png" width="95%"> <br>
+    <img src="imgs/SpeechGPT-main.png" width="95%"> <br>
     Left: SpeechInstruct construction process.  Right: SpeechGPT model structure
 </p>
 
