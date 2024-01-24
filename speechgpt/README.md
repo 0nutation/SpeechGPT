@@ -71,7 +71,7 @@ SpeechInstruct-chain-of-modality data format:
 
 ```bash
 git clone https://github.com/0nutation/SpeechGPT
-cd SpeechGPT
+cd SpeechGPT/speechgpt
 conda create --name SpeechGPT python=3.8
 conda activate SpeechGPT
 pip install -r requirements.txt
