@@ -7,13 +7,10 @@
 </p>
 
 ## Introduction
-Current large-scale speech generative models have demonstrated remarkable in-context speech generation abilities, generalizing effectively to to unseen speakers. 
-However, from the information modeling perspective, certain redundancies exist in their modeling process.
-We introduce Chain-of-Information Generation, a semantic and perceptual disentangled approach to
-large-scale speech generation, which performs semantic and perceptual modeling sequentially. Based on that, we build SpeechGPT-Gen, a large speech langauge model with strong semantic and perceptual modeling abilities. SpeechGPT-Gen consists of a LLM based autoregressive model for semantic modeling and a flow matching based non-autoregressive model for perceptual modeling. We propose to improve the efficiency of flow matching by injecting semantic information into the prior distribution.
-Scaling up the model parameters to 8 billion, SpeechGPT-Gen achieves impressive performance on zero-shot text-to-speech, zero-shot voice conversion and
-speech-to-speech dialogue, showing strong semantic and perceptual modeling capabilities and the effectiveness
-and efficiency of Chain-of-Information Generation method.
+Benefiting from effective speech modeling, current Speech Large Language Models (SLLMs) have demonstrated exceptional capabilities in in-context speech generation and efficient generalization to unseen speakers. 
+However, the prevailing information modeling process is encumbered by certain redundancies, leading to inefficiencies in speech generation.
+We propose Chain-of-Information Generation (CoIG), a method for decoupling semantic and perceptual information in large-scale speech generation. Building on this, we develop SpeechGPT-Gen, an 8-billion-parameter SLLM efficient in semantic and perceptual information modeling. It comprises an autoregressive model based on LLM for semantic information modeling and a non-autoregressive model employing flow matching for perceptual information modeling. Additionally, we introduce the novel approach of infusing semantic information into the prior distribution to enhance the efficiency of flow matching. 
+Extensive experimental results demonstrate that SpeechGPT-Gen markedly excels in zero-shot text-to-speech, zero-shot voice conversion, and speech-to-speech dialogue, underscoring CoIG's remarkable proficiency in capturing and modeling speech's semantic and perceptual dimensions.
 
 <p align="center">
     <img src="imgs/model.png" width="95%"> <br>
