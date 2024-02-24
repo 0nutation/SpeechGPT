@@ -11,6 +11,7 @@
 
 
 ## News
+- **[2024/2/20]** We proposed **AnyGPT: Unified Multimodal LLM with Discrete Sequence Modeling**. Checkout the [paper](https://arxiv.org/abs/2402.12226) and [github](https://github.com/OpenMOSS/AnyGPT).
 - **[2024/1/25]** We released **SpeechGPT-Gen: Scaling Chain-of-Information Speech Generation**. Checkout the [paper](https://arxiv.org/abs/2401.13527) and [github](https://github.com/0nutation/SpeechGPT/tree/main/speechgpt-gen).
 - **[2024/1/9]** We proposed **SpeechAgents: Human-Communication Simulation with Multi-Modal Multi-Agent Systems**. Checkout the [paper](https://arxiv.org/abs/2401.03945) and [github](https://github.com/0nutation/SpeechAgents).
 - **[2023/9/15]** We released SpeechGPT code and checkpoints and SpeechInstruct dataset.
