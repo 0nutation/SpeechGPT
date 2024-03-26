@@ -1,0 +1,4 @@
+_target_: src.processer.transforms.get_transform
+type: blip
+image_size: 224
+keep_ratio: False

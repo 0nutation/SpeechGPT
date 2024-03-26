@@ -48,10 +48,10 @@ deepspeed --include=localhost:${CUDA_VISIBLE_DEVICES} --master_port ${AVAILBLE_P
     --per_device_eval_batch_size 64 \
     --per_device_train_batch_size 64 \
     --gradient_accumulation_steps 2 \
-    --num_train_epochs 3 \
+    --num_train_epochs 1 \
     --log_level debug \
     --logging_steps 1 \
-    --save_steps 300 \
+    --save_steps 2 \
     --cache_dir ${CACHEROOT} \
     --gradient_checkpointing True \
     --tf32 True

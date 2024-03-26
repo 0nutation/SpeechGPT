@@ -1,0 +1,2 @@
+_target_: src.tokenizer.seed_llama_tokenizer.SeedLlamaTokenizer.from_pretrained
+pretrained_model_name_or_path: pretrained/seed_llama_tokenizer

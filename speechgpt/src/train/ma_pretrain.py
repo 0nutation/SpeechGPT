@@ -350,7 +350,7 @@ def train(attn_implementation=None):
     #Extend vocab for speech units
     if '<sosp>' not in tokenizer.get_vocab():
         units_size=1000
-        logger.info(f"Add special unit tokens <0>-<{units_size-1} to tokenizer.vocab")
+        logger.info(f"Add special unit tokens <0>-<{units_size-1}> to tokenizer.vocab")
         new_tokens = [f"<{x}>" for x in range(units_size)] + ['<sosp>', '<eosp>']
         tokenizer.add_tokens(new_tokens)
 
@@ -412,6 +412,13 @@ def train(attn_implementation=None):
             split=f"train[:{data_args.validation_split_percentage}%]",
             **dataset_args,
         )
+
+    if local_rank == 0:
+        for key, p in model.named_parameters():
+            if p.requires_grad:
+                print(f"{key} -> True")
+            else:
+                print(f"{key} -> False")
 
 
     if training_args.do_train:
