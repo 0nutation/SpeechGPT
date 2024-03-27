@@ -28,11 +28,6 @@ class LLaVAImagePretrainDataset(ImageFolder):
 
 
 def main():
-    with open("/mnt/hdd4/xiejunlin/datasets/llava/train_json/blip_laion_cc_sbu_558k.json", "r") as fp:
-        data = json.load(fp)
-
-    result = list()
-
     transform = get_transform("clip", image_size=224, keep_ratio=False)
     tokenizer = SeedLlamaTokenizer.from_pretrained(
         pretrained_model_name_or_path="AILab-CVC/seed-tokenizer-2",
@@ -48,7 +43,8 @@ def main():
     print("Init Done")
     
     # loading image folder
-    dataset = LLaVAImagePretrainDataset(root="/mnt/hdd4/xiejunlin/datasets/llava/llava_image_pretrain", transform=transform)
+    data_root = "/mnt/hdd4/xiejunlin/datasets/llava/llava_image_pretrain"
+    dataset = LLaVAImagePretrainDataset(root=data_root, transform=transform)
     dataloader = torch.utils.data.DataLoader(dataset, batch_size=256, shuffle=False, num_workers=16)
 
     with open("./image_tokens.txt", "w") as f:
@@ -77,14 +73,14 @@ def main():
             assert d['image'] in t[0]
             text: str = (
                 "Human: " 
-                + d["conversations"][0]["value"]
+                + d["conversations"][0]["value"].replace("\n", "\\n")
                 + " </s>"
                 + " Assistant: "
                 + d["conversations"][1]["value"]
                 + " </s>"
                 + "\n"
             )
-            text = text.replace("<image>", t[1])
+            text = text.replace("<image>", f"<soim>{t[1]}<eosim>")
             f.write(text)
 
 
