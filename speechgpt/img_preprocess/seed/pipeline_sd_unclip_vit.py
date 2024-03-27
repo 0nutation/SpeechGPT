@@ -29,7 +29,8 @@ from diffusers.loaders import LoraLoaderMixin, TextualInversionLoaderMixin
 from diffusers.models import AutoencoderKL, UNet2DConditionModel
 from diffusers.models.embeddings import get_timestep_embedding
 from diffusers.schedulers import KarrasDiffusionSchedulers
-from diffusers.utils import is_accelerate_version, logging, randn_tensor, replace_example_docstring
+from diffusers.utils import is_accelerate_version, logging, replace_example_docstring
+from diffusers.utils.torch_utils import randn_tensor
 from diffusers.pipelines.pipeline_utils import DiffusionPipeline, ImagePipelineOutput
 from diffusers.pipelines.stable_diffusion.stable_unclip_image_normalizer import StableUnCLIPImageNormalizer
 
