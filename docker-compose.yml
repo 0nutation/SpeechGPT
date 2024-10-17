@@ -1,0 +1,36 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    image: speechgpt:0.0.1
+    volumes:
+      - "/data:/data"
+      - "/data/huggingface:/root/.cache/huggingface"
+      - "/data/modelscope:/root/.cache/modelscope"
+      - "./mhubert_base_vp_en_es_fr_it3.pt:/app/speechgpt/utils/speech2unit/mhubert_base_vp_en_es_fr_it3.pt"
+      - "./mhubert_base_vp_en_es_fr_it3_L11_km1000.bin:/app/speechgpt/utils/speech2unit/mhubert_base_vp_en_es_fr_it3_L11_km1000.bin"
+
+      - "./config.json:/app/speechgpt/utils/vocoder/config.json"
+      - "./vocoder.pt:/app/speechgpt/utils/vocoder/vocoder.pt"
+    ports:
+      - 18998:8998
+    user: root
+    environment:
+      PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION: python
+      PYTHONPATH: /app/
+      LOG_LEVEL: DEBUG
+      WEB_ADDRESS: 0.0.0.0:9000
+      NVIDIA_VISIBLE_DEVICES: 4
+      PYTHONUNBUFFERED: 1
+      # TORIO_USE_FFMPEG_VERSION: 1
+    # entrypoint: tail -f /dev/null
+    # entrypoint: python3 speechgpt/src/infer/cli_infer.py --model-name-or-path /root/.cache/modelscope/hub/shareAI/fnlp-SpeechGPT-7B-cm/ --lora-weights fnlp/SpeechGPT-7B-com --s2u-dir /app/speechgpt/utils/speech2unit/ --vocoder-dir /app/speechgpt/utils/vocoder/ --output-dir /app/output/ 
+    entrypoint: python speechgpt/src/infer/web_infer.py --model-name-or-path /root/.cache/modelscope/hub/shareAI/fnlp-SpeechGPT-7B-cm/ --lora-weights fnlp/SpeechGPT-7B-com
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]

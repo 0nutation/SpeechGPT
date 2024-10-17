@@ -1,3 +1,4 @@
+import sys
 import torch
 import torch.nn as nn
 from fairseq.models.text_to_speech.vocoder import CodeHiFiGANVocoder
@@ -49,12 +50,12 @@ def extract_text_between_tags(text, tag1='[SpeechGPT] :', tag2='<eoa>'):
 
 class SpeechGPTInference:
     def __init__(
-        self, 
-        model_name_or_path: str,
-        lora_weights: str=None,
-        s2u_dir: str="speechgpt/utils/speech2unit/",
-        vocoder_dir: str="speechgpt/utils/vocoder/", 
-        output_dir="speechgpt/output/"
+            self, 
+            model_name_or_path: str,
+            lora_weights: str=None,
+            s2u_dir: str="speechgpt/utils/speech2unit/",
+            vocoder_dir: str="speechgpt/utils/vocoder/", 
+            output_dir="speechgpt/output/"
         ):
         
         self.meta_instruction = META_INSTRUCTION
@@ -251,9 +252,3 @@ if __name__=='__main__':
     )
 
     infer.interact()
-
-
-
-
-
-

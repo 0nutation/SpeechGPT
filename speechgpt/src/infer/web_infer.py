@@ -2,7 +2,7 @@ import os
 import numpy as np
 import gradio as gr
 from speechgpt.utils.speech2unit.speech2unit import Speech2Unit
-from speechgpt.src.infer.cli_inference import SpeechGPTInference
+from speechgpt.src.infer.cli_infer import SpeechGPTInference
 import soundfile as sf
 import argparse
 
@@ -13,6 +13,7 @@ parser.add_argument("--lora-weights", type=str, default=None)
 parser.add_argument("--s2u-dir", type=str, default="speechgpt/utils/speech2unit/")
 parser.add_argument("--vocoder-dir", type=str, default="speechgpt/utils/vocoder/")
 parser.add_argument("--output-dir", type=str, default="speechgpt/output/")
+parser.add_argument("--input-path", type=str, default="/tmp/input.audio.wav")
 args = parser.parse_args()
 
 os.makedirs(args.output_dir, exist_ok=True)
@@ -20,7 +21,7 @@ os.makedirs(args.output_dir, exist_ok=True)
 infer = SpeechGPTInference(
     args.model_name_or_path,
     args.lora_weights,
-    args.load_8bit,
+    # args.load_8bit,
     args.s2u_dir,
     args.vocoder_dir,
     args.output_dir
@@ -45,5 +46,4 @@ demo = gr.Interface(
         title="SpeechGPT",
         cache_examples=False
         )
-demo.launch(share=True)
-
+demo.launch(share=True, server_name='0.0.0.0', server_port=8998, )
