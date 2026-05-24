@@ -127,7 +127,7 @@ Please talk with SpeechGPT:
 prompts/0.wav
 Transcript:   What are the main causes of climate change?
 Text response:  The main causes of climate change are human activities such as burning fossil fuels, deforestation, and agricultural practices. These activities release greenhouse gases, like carbon dioxide and Methane, into the atmosphere which trap heat and cause the Earth's temperature to rise.
-Speech repsonse is saved in output/wav/answer_0.wav
+Speech response is saved in output/wav/answer_0.wav
 Response json is saved in output/responses.json
 ```
 
@@ -146,7 +146,7 @@ Please talk with SpeechGPT:
 Read this sentence aloud, this is input: Today is a sunny day.
 Response:
    <sosp> <661> <987> <520> <982> <681> <982> <681> <982> <681> <982> <681> <982> <189> <63> <662> <79> <868> <220> <196> <166> <549> <822> <89> <194> <633> <14> <855> <183> <609> <389> <771> <865> <641> <124> <362> <734> <742> <98> <519> <26> <204> <280> <668> <167> <104> <650> <179> <961> <428> <950> <82> <165> <196> <166> <549> <822> <89> <194> <458> <726> <603> <819> <651> <133> <651> <133> <186> <133> <186> <133> <186> <511> <186> <511> <eosp> 
-Speech repsonse is saved in output/wav/answer_1.wav
+Speech response is saved in output/wav/answer_1.wav
 Response json is saved in output/responses.json
 ```
 
