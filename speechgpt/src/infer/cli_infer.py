@@ -177,7 +177,7 @@ class SpeechGPTInference:
             #postprocess
             responses = [self.postprocess(x) for x in responses]
 
-            #save repsonses
+            #save responses
             init_num = sum(1 for line in open(f"{self.output_dir}/responses.json", 'r')) if os.path.exists(f"{self.output_dir}/responses.json") else 0             
             with open(f"{self.output_dir}/responses.json", 'a') as f:
                 for r in responses:
@@ -200,7 +200,7 @@ class SpeechGPTInference:
                         }
                     wav = self.vocoder(x, True)
                     self.dump_wav(init_num+i, wav, prefix="answer")
-                    print(f"Speech repsonse is saved in {self.output_dir}/wav/answer_{init_num+i}.wav")
+                    print(f"Speech response is saved in {self.output_dir}/wav/answer_{init_num+i}.wav")
             print(f"Response json is saved in {self.output_dir}/responses.json")
 
 
